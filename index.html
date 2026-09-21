@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b63f6">
+<title>IDM Forschungsmethoden – Prüfungstrainer</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <h1>IDM Prüfungstrainer – Forschungsmethoden</h1>
+        <div class="sub">Mehrfachauswahl · 20 Fragen · Teilpunkte · neue Fragen ohne stilles Recycling</div>
+      </div>
+    </div>
+    <div class="controls">
+      <select id="mode" aria-label="Testbereich">
+        <option value="all">Gesamtes Skript</option>
+        <option value="qual">Nur qualitativ</option>
+        <option value="quant">Nur quantitativ</option>
+        <option value="stats">Statistik & Testverfahren</option>
+      </select>
+      <button id="eval" class="primary">Auswerten</button>
+      <button id="errors">Nur Fehler</button>
+      <button id="all">Alle Fragen</button>
+      <button id="retry">Test erneut versuchen</button>
+      <button id="new">＋ Neuer Test</button>
+    </div>
+  </div>
+</header>
+<div id="tabs" class="tabs"></div>
+<main>
+  <div class="help">
+    Antworten direkt anhaken. Es können <b>eine oder mehrere Antworten</b> richtig sein. Die Anzahl wird nicht verraten.
+    Bei einem neuen Test erzeugt die Seite neue Fragekombinationen und merkt sich lokal, welche Fragen auf diesem Gerät schon verwendet wurden.
+  </div>
+  <div id="status" class="status"></div>
+  <div id="quiz"></div>
+</main>
+<footer>
+  Teilpunkte: +1/k je richtig gesetztem Häkchen und −1/k je falsch gesetztem Häkchen; k = Anzahl richtiger Antworten. Pro Frage mindestens 0 und höchstens 1 Punkt.
+  Der Verlauf wird nur im Browser dieses Geräts gespeichert. Bei gelöschten Browserdaten oder einem anderen Gerät kennt die Seite den bisherigen Verlauf nicht.
+  <br><br><button id="resetHistory" class="danger">Lokalen Testverlauf zurücksetzen</button>
+</footer>
+<script src="./bank.js"></script>
+<script src="./app.js"></script>
+<script>
+if("serviceWorker" in navigator && location.protocol.startsWith("http")){
+  navigator.serviceWorker.register("./service-worker.js").catch(()=>{});
+}
+</script>
+</body>
+</html>

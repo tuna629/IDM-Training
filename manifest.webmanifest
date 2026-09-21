@@ -1,0 +1,9 @@
+{
+  "name": "IDM Forschungsmethoden – Prüfungstrainer",
+  "short_name": "IDM Trainer",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f5f7",
+  "theme_color": "#0b63f6",
+  "lang": "de"
+}

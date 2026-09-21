@@ -1,0 +1,13 @@
+GITHUB PAGES – SCHNELLSTART
+
+1. github.com öffnen und anmelden.
+2. Neues Repository erstellen: forschungsmethoden-trainer
+3. Alle Dateien aus diesem Ordner hochladen.
+4. Commit changes.
+5. Settings > Pages.
+6. Deploy from a branch auswählen.
+7. Branch: main, Folder: /(root), Save.
+8. GitHub zeigt anschließend die Adresse der Website an.
+
+Auf iPhone/iPad:
+Safari > Teilen > Zum Home-Bildschirm.
