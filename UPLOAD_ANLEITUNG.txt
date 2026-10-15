@@ -1,0 +1,12 @@
+HRM-TRAINER AUF DEINER BESTEHENDEN GITHUB-SEITE ERSETZEN
+
+1. ZIP am Mac doppelklicken.
+2. Im GitHub-Repository tuna629/IDM-Training auf Code gehen.
+3. Add file > Upload files.
+4. Im entpackten Ordner IDM_HRM_Training alle sichtbaren Dateien markieren und hineinziehen.
+5. GitHub erkennt die gleichnamigen Dateien als Änderungen. Unten Commit changes drücken.
+6. 1-3 Minuten warten.
+7. https://tuna629.github.io/IDM-Training/ neu laden.
+
+GitHub Pages muss NICHT nochmals eingerichtet werden.
+Die alte Forschungsmethoden-Version wird durch HRM ersetzt.

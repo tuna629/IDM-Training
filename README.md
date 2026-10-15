@@ -1,44 +1,29 @@
-# IDM Forschungsmethoden – Prüfungstrainer
+# IDM Human Resource Management – Prüfungstrainer
 
-Statische Website für GitHub Pages. Kein API-Key und kein Server notwendig.
+Diese Version ersetzt den bisherigen Forschungsmethoden-Trainer im bestehenden Repository `IDM-Training`.
 
-## Auf GitHub veröffentlichen
+## Aktualisieren der bestehenden GitHub-Pages-Seite
 
-1. Auf GitHub ein neues Repository anlegen, z. B. `forschungsmethoden-trainer`.
-2. Die Dateien aus diesem Ordner in das Repository hochladen und committen.
-3. Im Repository **Settings → Pages** öffnen.
-4. Unter **Build and deployment** `Deploy from a branch` wählen.
-5. Branch `main`, Ordner `/ (root)` auswählen und speichern.
-6. Nach kurzer Zeit zeigt GitHub oben die veröffentlichte Adresse an.
+Im Repository die Dateien aus diesem Paket hochladen und die gleichnamigen vorhandenen Dateien ersetzen:
 
-Typisch sieht sie so aus:
-`https://DEIN-GITHUB-NAME.github.io/forschungsmethoden-trainer/`
+- `index.html`
+- `app.js`
+- `bank.js`
+- `styles.css`
+- `manifest.webmanifest`
+- `service-worker.js`
+- `.nojekyll`
 
-## iPhone/iPad
+GitHub Pages muss **nicht neu eingerichtet** werden. Nach dem Commit 1–3 Minuten warten und die bestehende Website neu laden.
 
-Website in Safari öffnen → Teilen → **Zum Home-Bildschirm**.
-Die Seite enthält außerdem einen Service Worker und kann nach dem ersten Laden weitgehend offline funktionieren.
-
-## Was der Trainer kann
+## Funktionen
 
 - 20 Fragen pro Test
-- Checkboxen / Mehrfachauswahl
-- IDM-artige Teilpunkte
-- unmittelbare Auswertung
-- Nur Fehler anzeigen
-- Test erneut versuchen, ohne den alten Versuch zu überschreiben
-- alte Tests im Verlauf
-- neue Tests ohne stilles Wiederverwenden bereits erzeugter Fragen
-- Bereiche: gesamtes Skript, qualitativ, quantitativ, Statistik & Testverfahren
-- lokaler Lernfortschritt via `localStorage`
-
-## Wichtig zur Neuheit der Fragen
-
-Die Seite erzeugt Fragen kombinatorisch aus einem großen, skriptbasierten Begriffs- und Szenarienpool.
-Die konkrete Frage-ID wird unabhängig von der Reihenfolge der Antwortmöglichkeiten gespeichert. Ein bloßes Umsortieren der Optionen zählt daher **nicht** als neue Frage.
-
-Der Verlauf gilt pro Browser/Gerät. Wer Browserdaten löscht oder ein anderes Gerät verwendet, startet einen neuen lokalen Verlauf.
-
-## Inhalte erweitern
-
-Die Wissensbasis liegt in `bank.js`; die Generierungslogik in `app.js`.
+- Mehrfachauswahl
+- IDM-Teilpunkte
+- neue Fragen ohne bloßes Umsortieren
+- gesamtes prüfungsrelevantes HRM-Skript als Basis
+- Themenfilter
+- alte Tests und Versuche
+- Nur-Fehler-Ansicht
+- 100 Tests bleiben sichtbar; die Nummerierung läuft dauerhaft weiter
