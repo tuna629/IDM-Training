@@ -1,9 +1,1 @@
-{
-  "name": "IDM Human Resource Management Prüfungstrainer",
-  "short_name": "IDM HRM",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#f4f5f7",
-  "theme_color": "#0b63f6",
-  "lang": "de"
-}
+{"name":"IDM Logistik 4.0 & KI Prüfungstrainer","short_name":"IDM Logistik","start_url":"./","display":"standalone","background_color":"#f4f5f7","theme_color":"#0b63f6","lang":"de"}
